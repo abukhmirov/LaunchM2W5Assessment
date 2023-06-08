@@ -1,16 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace M2W5Assessment
 {
-    public class Concert
+    public class Performer
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public DateTime ShowDate { get; set; }
-        public List<Performer> PerformersAttending { get; set; }
+        public string Genre { get; set; }
+        public int Members { get; set; }
+        public List<Concert> AttendingConcerts { get; set; }
     }
 }

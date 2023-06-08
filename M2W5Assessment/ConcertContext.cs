@@ -11,6 +11,6 @@ namespace M2W5Assessment
     {
         public DbSet<Concert> Concerts { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    => optionsBuilder.UseNpgsql("Host=localhost;Username=postgres;Password=<enter_your_password_here>;Database=concert").UseSnakeCaseNamingConvention();
+    => optionsBuilder.UseNpgsql("Host=localhost;Username=postgres;Password=password123;Database=concert").UseSnakeCaseNamingConvention();
     }
 }
